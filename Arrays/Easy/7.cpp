@@ -1,4 +1,5 @@
 // Find all occurences
+//Trick: don't use break
 #include <iostream>
 using namespace std;
 
