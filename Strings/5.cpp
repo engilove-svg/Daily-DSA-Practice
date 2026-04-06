@@ -1,0 +1,16 @@
+//convert it into uppercase
+
+#include<iostream>
+#include<cctype>//toupper
+
+using namespace std;
+int main(){
+    string s;
+    getline(cin,s);
+
+    for(int i=0;i<s.length();i++){
+        s[i]=toupper(s[i]);
+    }
+    cout<<s;
+    return 0;
+}
