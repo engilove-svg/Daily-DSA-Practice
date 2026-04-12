@@ -15,16 +15,17 @@ int main()
     }
     string prefix = strs[0];
 
-    for (int j = 1; j < n; j++)
+    for (int j = 1; j < n; j++)//j is the element pointing  next to prefix as prefix has index 0 j is starting from 1.
     {
-        int i = 0;
-        while (i < prefix.length() && i < strs[j].length() && prefix[i] == strs[j][i])
+        int i = 0;//i ponts to each charcter of j element.
+        while (i < prefix.length() && i < strs[j].length() && prefix[i] == strs[j][i])//str[j] is the element next to prefix and str[j][i]
+        //means it points to the chracter i of the j element
         {
             i++;
         }
         prefix = prefix.substr(0, i);
     }
-    if (prefix == "")
+    if (prefix == "")//edge case
     {
         cout << " """;
     }
