@@ -1,21 +1,26 @@
-// inverted triangle pattern
+// Inverted triangle pattern with characters
 #include <iostream>
 using namespace std;
 int main()
 {
     int n;
     cin >> n;
+    char ch = 'A';
     for (int i = 0; i < n; i++)
     {
+        
         for (int j = 0; j < i; j++)
         {
             cout << " ";
         }
         for (int j = 0; j < n - i; j++)
         {
-            cout << i + 1;
+            cout << ch;
+            
         }
+        ch++;
         cout << endl;
     }
+
     return 0;
 }

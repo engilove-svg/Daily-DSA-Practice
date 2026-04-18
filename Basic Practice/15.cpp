@@ -1,4 +1,3 @@
-// inverted triangle pattern
 #include <iostream>
 using namespace std;
 int main()
@@ -11,11 +10,13 @@ int main()
         {
             cout << " ";
         }
-        for (int j = 0; j < n - i; j++)
+        for (int j = 0; j < n-i; j++)
         {
-            cout << i + 1;
+            cout << j + 1;
         }
+
         cout << endl;
     }
+
     return 0;
 }
